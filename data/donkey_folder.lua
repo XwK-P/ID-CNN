@@ -43,13 +43,13 @@ local preprocessAandB = function(imA, imB)
   if input_nc == 1 and output_nc == 1 then
       --imA = imA:mul(30):add(-1)
       --imB = imB:mul(30):add(-1)
-      imA = imA--:mul(15)--:add(-1)
-      imB = imB--:mul(15)--:add(-1)
+      imA = imA:mul(2):add(-1)
+      imB = imB:mul(2):add(-1)
   else
       imA = imA:index(1, perm)--:mul(256.0): brg, rgb
-      imA = imA--:mul(15)--:add(-1)
+      imA = imA--:mul(2):add(-1)
       imB = imB:index(1, perm)
-      imB = imB--:mul(15)--:add(-1)
+      imB = imB--:mul(2):add(-1)
   end
 --   print(img:size())
 --  assert(imA:max()<=1,"A: badly scaled inputs")
