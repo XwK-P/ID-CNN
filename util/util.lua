@@ -64,10 +64,10 @@ function util.deprocess(img)
 
     if input_nc == 1 and output_nc == 1 then
         --img = img
-        --img = img:add(1):div(2)
+        img = img:add(1):div(2)
     else
         img = img:index(1, perm)
-        --img = img:add(1):div(2)
+        img = img:add(1):div(2)
     end
 
     
