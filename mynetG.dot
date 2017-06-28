@@ -1,0 +1,181 @@
+digraph G {
+	graph [bb="0,0,561,3232"];
+	node [label="\N",
+		shape=oval
+	];
+	n1	 [height=1.041,
+		label="Node1\nmodule = nn.TotalVariation\lreverseMap = {}",
+		pos="124,150",
+		tooltip="[[C]]:-1_",
+		width=3.3362];
+	n2	 [height=1.041,
+		label="Node2\ninput = {}\lreverseMap = {}",
+		pos="124,38",
+		tooltip="[[C]]:-1_",
+		width=2.1497];
+	n1 -> n2	 [pos="e,124,75.844 124,112.37 124,103.93 124,94.829 124,86.011"];
+	n3	 [height=1.041,
+		label="Node3\nmodule = nn.Tanh\lreverseMap = {}",
+		pos="124,262",
+		tooltip="[[C]]:-1_",
+		width=2.3354];
+	n3 -> n1	 [pos="e,124,187.84 124,224.37 124,215.93 124,206.83 124,198.01"];
+	n4	 [height=1.3356,
+		label="Node4\nmodule = nn.CDivTable\lreverseMap = {}\lmapindex = {Node5,Node6}",
+		pos="124,384",
+		tooltip="[[C]]:-1_",
+		width=3.4507];
+	n4 -> n3	 [pos="e,124,299.72 124,335.57 124,327.1 124,318.27 124,309.81"];
+	n5	 [height=1.041,
+		label="Node5\nmodule = nn.Identity\lreverseMap = {}",
+		pos="165,3082",
+		tooltip="[[C]]:-1_",
+		width=2.6117];
+	n5 -> n4	 [pos="e,95.513,431.09 105.49,3052.8 87.477,3041.3 69.454,3026.4 58,3008 22.7,2951.2 37,2925.9 37,2859 37,2859 37,2859 37,617 37,553.28 \
+66.127,485.63 90.674,439.93"];
+	n29	 [height=1.041,
+		label="Node29\nmodule = nn.SpatialConvolution(1 -> 64, 3x3, 1,1, 1,1)\lreverseMap = {}",
+		pos="295,2970",
+		tooltip="[[C]]:-1_",
+		width=6.3388];
+	n5 -> n29	 [pos="e,252.61,3006.9 204.36,3047.7 217.1,3036.9 231.41,3024.8 244.83,3013.5"];
+	n6	 [height=1.041,
+		label="Node6\nmodule = nn.AddConstant\lreverseMap = {}",
+		pos="212,506",
+		tooltip="[[C]]:-1_",
+		width=3.1743];
+	n6 -> n4	 [pos="e,157.42,430.57 185.84,469.32 178.8,459.73 171.03,449.13 163.45,438.79"];
+	n7	 [height=1.041,
+		label="Node7\ninput = {}\lreverseMap = {}",
+		pos="165,3194",
+		tooltip="[[C]]:-1_",
+		width=2.1497];
+	n7 -> n5	 [pos="e,165,3119.8 165,3156.4 165,3147.9 165,3138.8 165,3130"];
+	n8	 [height=1.041,
+		label="Node8\nmodule = nn.ReLU\lreverseMap = {}",
+		pos="276,618",
+		tooltip="[[C]]:-1_",
+		width=2.4261];
+	n8 -> n6	 [pos="e,232.89,542.91 255.22,581.29 249.74,571.87 243.76,561.6 238.05,551.77"];
+	n9	 [height=1.041,
+		label="Node9\nmodule = nn.SpatialFullConvolution(64 -> 1, 3x3, 1,1, 1,1)\lreverseMap = {}",
+		pos="309,730",
+		tooltip="[[C]]:-1_",
+		width=6.7534];
+	n9 -> n8	 [pos="e,286.94,655.47 298.01,692.37 295.4,683.65 292.57,674.23 289.84,665.15"];
+	n10	 [height=1.041,
+		label="Node10\nmodule = nn.ReLU\lreverseMap = {}",
+		pos="310,842",
+		tooltip="[[C]]:-1_",
+		width=2.4261];
+	n10 -> n9	 [pos="e,309.33,767.84 309.67,804.37 309.59,795.93 309.51,786.83 309.43,778.01"];
+	n11	 [height=1.041,
+		label="Node11\nmodule = nn.SpatialBatchNormalization (4D) (64)\lreverseMap = {}",
+		pos="312,954",
+		tooltip="[[C]]:-1_",
+		width=5.7624];
+	n11 -> n10	 [pos="e,310.67,879.84 311.33,916.37 311.18,907.93 311.02,898.83 310.85,890.01"];
+	n12	 [height=1.041,
+		label="Node12\nmodule = nn.SpatialFullConvolution(64 -> 64, 3x3, 1,1, 1,1)\lreverseMap = {}",
+		pos="313,1066",
+		tooltip="[[C]]:-1_",
+		width=6.8916];
+	n12 -> n11	 [pos="e,312.33,991.84 312.67,1028.4 312.59,1019.9 312.51,1010.8 312.43,1002"];
+	n13	 [height=1.041,
+		label="Node13\nmodule = nn.ReLU\lreverseMap = {}",
+		pos="313,1178",
+		tooltip="[[C]]:-1_",
+		width=2.4261];
+	n13 -> n12	 [pos="e,313,1103.8 313,1140.4 313,1131.9 313,1122.8 313,1114"];
+	n14	 [height=1.041,
+		label="Node14\nmodule = nn.SpatialBatchNormalization (4D) (64)\lreverseMap = {}",
+		pos="313,1290",
+		tooltip="[[C]]:-1_",
+		width=5.7624];
+	n14 -> n13	 [pos="e,313,1215.8 313,1252.4 313,1243.9 313,1234.8 313,1226"];
+	n15	 [height=1.041,
+		label="Node15\nmodule = nn.SpatialFullConvolution(64 -> 64, 3x3, 1,1, 1,1)\lreverseMap = {}",
+		pos="313,1402",
+		tooltip="[[C]]:-1_",
+		width=6.8916];
+	n15 -> n14	 [pos="e,313,1327.8 313,1364.4 313,1355.9 313,1346.8 313,1338"];
+	n16	 [height=1.041,
+		label="Node16\nmodule = nn.ReLU\lreverseMap = {}",
+		pos="313,1514",
+		tooltip="[[C]]:-1_",
+		width=2.4261];
+	n16 -> n15	 [pos="e,313,1439.8 313,1476.4 313,1467.9 313,1458.8 313,1450"];
+	n17	 [height=1.041,
+		label="Node17\nmodule = nn.SpatialBatchNormalization (4D) (64)\lreverseMap = {}",
+		pos="313,1626",
+		tooltip="[[C]]:-1_",
+		width=5.7624];
+	n17 -> n16	 [pos="e,313,1551.8 313,1588.4 313,1579.9 313,1570.8 313,1562"];
+	n18	 [height=1.041,
+		label="Node18\nmodule = nn.SpatialFullConvolution(64 -> 64, 3x3, 1,1, 1,1)\lreverseMap = {}",
+		pos="313,1738",
+		tooltip="[[C]]:-1_",
+		width=6.8916];
+	n18 -> n17	 [pos="e,313,1663.8 313,1700.4 313,1691.9 313,1682.8 313,1674"];
+	n19	 [height=1.041,
+		label="Node19\nmodule = nn.LeakyReLU(0.2)\lreverseMap = {}",
+		pos="311,1850",
+		tooltip="[[C]]:-1_",
+		width=3.6126];
+	n19 -> n18	 [pos="e,312.33,1775.8 311.67,1812.4 311.82,1803.9 311.98,1794.8 312.15,1786"];
+	n20	 [height=1.041,
+		label="Node20\nmodule = nn.SpatialBatchNormalization (4D) (64)\lreverseMap = {}",
+		pos="309,1962",
+		tooltip="[[C]]:-1_",
+		width=5.7624];
+	n20 -> n19	 [pos="e,310.33,1887.8 309.67,1924.4 309.82,1915.9 309.98,1906.8 310.15,1898"];
+	n21	 [height=1.041,
+		label="Node21\nmodule = nn.SpatialConvolution(64 -> 64, 3x3, 1,1, 1,1)\lreverseMap = {}",
+		pos="305,2074",
+		tooltip="[[C]]:-1_",
+		width=6.4533];
+	n21 -> n20	 [pos="e,307.66,1999.8 306.33,2036.4 306.64,2027.9 306.97,2018.8 307.29,2010"];
+	n22	 [height=1.041,
+		label="Node22\nmodule = nn.LeakyReLU(0.2)\lreverseMap = {}",
+		pos="298,2186",
+		tooltip="[[C]]:-1_",
+		width=3.6126];
+	n22 -> n21	 [pos="e,302.66,2111.8 300.33,2148.4 300.87,2139.9 301.45,2130.8 302.01,2122"];
+	n23	 [height=1.041,
+		label="Node23\nmodule = nn.SpatialBatchNormalization (4D) (64)\lreverseMap = {}",
+		pos="298,2298",
+		tooltip="[[C]]:-1_",
+		width=5.7624];
+	n23 -> n22	 [pos="e,298,2223.8 298,2260.4 298,2251.9 298,2242.8 298,2234"];
+	n24	 [height=1.041,
+		label="Node24\nmodule = nn.SpatialConvolution(64 -> 64, 3x3, 1,1, 1,1)\lreverseMap = {}",
+		pos="298,2410",
+		tooltip="[[C]]:-1_",
+		width=6.4533];
+	n24 -> n23	 [pos="e,298,2335.8 298,2372.4 298,2363.9 298,2354.8 298,2346"];
+	n25	 [height=1.041,
+		label="Node25\nmodule = nn.LeakyReLU(0.2)\lreverseMap = {}",
+		pos="298,2522",
+		tooltip="[[C]]:-1_",
+		width=3.6126];
+	n25 -> n24	 [pos="e,298,2447.8 298,2484.4 298,2475.9 298,2466.8 298,2458"];
+	n26	 [height=1.041,
+		label="Node26\nmodule = nn.SpatialBatchNormalization (4D) (64)\lreverseMap = {}",
+		pos="298,2634",
+		tooltip="[[C]]:-1_",
+		width=5.7624];
+	n26 -> n25	 [pos="e,298,2559.8 298,2596.4 298,2587.9 298,2578.8 298,2570"];
+	n27	 [height=1.041,
+		label="Node27\nmodule = nn.SpatialConvolution(64 -> 64, 3x3, 1,1, 1,1)\lreverseMap = {}",
+		pos="298,2746",
+		tooltip="[[C]]:-1_",
+		width=6.4533];
+	n27 -> n26	 [pos="e,298,2671.8 298,2708.4 298,2699.9 298,2690.8 298,2682"];
+	n28	 [height=1.041,
+		label="Node28\nmodule = nn.LeakyReLU(0.2)\lreverseMap = {}",
+		pos="296,2858",
+		tooltip="[[C]]:-1_",
+		width=3.6126];
+	n28 -> n27	 [pos="e,297.33,2783.8 296.67,2820.4 296.82,2811.9 296.98,2802.8 297.15,2794"];
+	n29 -> n28	 [pos="e,295.67,2895.8 295.33,2932.4 295.41,2923.9 295.49,2914.8 295.57,2906"];
+}
