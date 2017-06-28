@@ -35,7 +35,7 @@ local opt = cmd:parse(arg)
 
 -- Parameter for training ID-CGAN
 opt = {
-   DATA_ROOT = '',         -- path to images (should have subfolders 'train', 'val', etc)
+   DATA_ROOT = '',         -- path to images (should have subfolders 'train', 'val', 'test' etc)
    batchSize = 128,          -- # images in batch
    loadSize = 256,         -- scale images to this size
    fineSize = 64,         --  then crop to this size
@@ -54,7 +54,7 @@ opt = {
    gpu = 1,                -- gpu = 0 is CPU mode. gpu=X is GPU mode on GPU X
    name = 'speckle',              -- name of the experiment, should generally be passed on the command line
    which_direction = 'AtoB',    -- AtoB or BtoA
-   phase = 'training',             -- train, val, test, etc
+   phase = 'train',             -- train, val, test, etc
    preprocess = 'regular',      -- for special purpose preprocessing, e.g., for colorization, change this (selects preprocessing functions in util.lua)
    nThreads = 2,                -- # threads for loading data
    save_epoch_freq = 50,        -- save a model every save_epoch_freq epochs (does not overwrite previously saved models)
